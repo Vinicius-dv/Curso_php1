@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando formularios com php</title>
+    <style>
+        body{
+            background-color: blueviolet;
+        }
+        form{
+            background-color: blueviolet;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        form label{
+            color: white;
+            font-size: 1.3em;
+            font-weight:bolder;
+        }
+        #nome_input_id{
+            margin: 5px 0px 20px 0px;
+            border-radius: 10px;
+            outline: none;
+            border: none;
+        }
+        #nome_input:focus{
+            border: 2px solid red;
+        }
+        #sobrenome_input_id{
+            margin: 5px 0px 5px 0px;
+            border-radius: 10px;
+            outline: none;
+            border: none;
+        }
+        #sobrenome_input:focus{
+            border: 2px solid red;
+        }
+        #btn_cad{
+            margin-top: 20px;
+            background-color: black;
+            color: white;
+            border-radius: 20px;
+            width: 100px;
+            height: 40px;
+            cursor: pointer;
+            transition: background 0.5s;
+        }
+        #btn_cad:hover{
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <form action="cad.php" method="get">
+        <label for="nome_input">Digite seu nome</label>
+        <input type="text" name="nome_input" id="nome_input_id">
+
+        <label for="sobrenome_input">Digite seu Sobrenome</label>
+        <input type="text" name="sobrenome_input" id="sobrenome_input_id">
+
+        <button type="submit" value="Enviar" id="btn_cad">Enviar</button>
+    </form>
+</body>
+</html>
