@@ -7,7 +7,7 @@
  $res = file_get_contents($url);
  //pegos a resposta e transformo em um array
  $dados = json_decode($res,true);
- //aqui eu pego apenas o valor da cotação do dolar ou seja o [0] serve para pegar o valor do primeiro item de value e o primeiro item tem o cotacaocompra ai eu pego apenas o valor de cotacaoCompra. ou seja eu pego o item 0 de value que contem 3 'chaves' ai eu pego apenas a chave cotacaoCompra
+ //aqui eu pego apenas o valor da cotação do dolar ou seja o [0] serve para pegar o valor do primeiro item de value e o primeiro item tem o cotacaocompra ai eu pego apenas o valor de cotacaoCompra. ou seja eu pego o item 0 de value que contem 3 'chaves' ai eu pego apenas a chave cotacaoCompra. e value é uma chave dentro do array que contem os itens e as dados.
  $cotação =  $dados['value'][0]['cotacaoCompra']; 
  //pego o numero digitaddo no html
  $valor_input = $_GET["conversor"];
