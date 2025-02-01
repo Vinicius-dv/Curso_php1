@@ -11,7 +11,7 @@
         <?php
         setcookie("dia-da-semana","quinta", time()+3600);
         session_start();
-        $_SESSION["teste" ] = "funcionou";
+        $_SESSION["teste"] = "funcionou";
         echo "<h1>Superglobal GET </h1>";
         var_dump($_GET);
         echo "<h1> Superglobal cookie</h1>";
