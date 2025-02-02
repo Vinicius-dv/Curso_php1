@@ -21,7 +21,7 @@
     $input_value_nasc = $_POST['nascimento'];
     $input_value_atual = $_POST['atual'];
     $idade = abs($input_value_nasc - $input_value_atual);
-    if($input_value_nasc>$input_value_atual){
+    if($input_value_nasc>$input_value_atual || $input_value_nasc === $input_value_atual){
         echo"Digite uma idade valida";
         return;
     };
