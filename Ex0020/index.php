@@ -14,7 +14,7 @@
     <p>Preço do produto</p>
     <input type="number" name="preço" id="">
 
-    <p>qual sera o porcentual de reajuste ? <span id="porcentagem"></span> </p>
+    <p>qual sera o porcentual de reajuste ?</p>
     <input type="number" name="porcentagem" id="">
 
     <button>analizar</button>
@@ -27,7 +27,6 @@
         $valor_imposto = $valor_input_preço *$fração_decimal_porcen;
         $valor_total = $valor_input_preço+$valor_imposto; 
     ?>
-
     <p>Resultado</p>
     <p>O produto que custava R$<?php echo $valor_input_preço;?> com <?php echo $valor_input_porcentagem ;?>% de aumento vai passar a custar R$<?php echo $valor_total;?> a partir de agora</p>   
 </body>

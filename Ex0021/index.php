@@ -99,7 +99,6 @@
     ?> 
     minutos</p>
 
-
     <p> <?php echo $input_value?> Segundos</p>
 </body>
 </html>
